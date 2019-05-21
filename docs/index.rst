@@ -1,0 +1,5 @@
+=================
+nva.footerviewlet
+=================
+
+User documentation
