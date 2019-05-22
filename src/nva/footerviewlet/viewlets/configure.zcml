@@ -8,13 +8,12 @@
 
   <browser:viewlet
      name="footer-viewlet"
-     for="plone.app.contenttypes.interfaces.IDocument"
-     manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
+     for="*"
+     manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
      layer="nva.footerviewlet.interfaces.INvaFooterviewletLayer"
      class=".footer_viewlet.FooterViewlet"
      template="footer_viewlet.pt"
      permission="zope2.View"
      />
-
 
 </configure>

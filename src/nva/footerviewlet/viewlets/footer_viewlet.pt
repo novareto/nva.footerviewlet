@@ -1,3 +1,5 @@
-<div class="days_to_conf">
-    ${view/message}
+<div class="page-footer pt-4" tal:condition="view/footercontent">
+  <div class="container">
+    <span tal:replace="structure view/footercontent"/>
+  </div>
 </div>
