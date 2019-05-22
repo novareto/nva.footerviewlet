@@ -4,6 +4,7 @@
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 from zope.interface import Interface
 from zope.schema import Text
+from nva.footerviewlet.config import defaultfooter
 
 class INvaFooterviewletLayer(IDefaultBrowserLayer):
     """Marker interface that defines a browser layer."""
@@ -11,5 +12,6 @@ class INvaFooterviewletLayer(IDefaultBrowserLayer):
 class IFooterSettingsSchema(Interface):
 
     footercontent = Text(title=u'Inhalt des Footers',
-                         description=u'Bitte tragen Sie hier den Inhalt des Footers als <HTML> ein.')
+                         description=u'Bitte tragen Sie hier den Inhalt des Footers als <HTML> ein.',
+                         default=defaultfooter)
 
